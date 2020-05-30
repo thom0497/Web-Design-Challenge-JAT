@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Latitude Summary</title>
+  <title>Comparison Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="LandingPage.css">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="LandingPage.html">Latitude Summary</a>
+    <a class="navbar-brand" href="index.html">Latitude Summary</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link" href="ComparisonPage.html">Comparison</a>
+          <a class="nav-link" href="ComparisonPage.html">Comparison</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="cities.html">City Data</a>
@@ -26,10 +26,10 @@
             Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="SecondaryPage.html">Latitude vs. Max Temperature</a>
-            <a class="dropdown-item" href="ThirdPage.html">Latitude vs. Humidity</a>
-            <a class="dropdown-item" href="FourthPage.html">Latitude vs. Cloudiness</a>
-            <a class="dropdown-item" href="FifthPage.html">Latitude vs. Wind Speed</a>
+            <a class="dropdown-item" href="TempVisual.html">Latitude vs. Max Temperature</a>
+            <a class="dropdown-item" href="HumidityVisual.html">Latitude vs. Humidity</a>
+            <a class="dropdown-item" href="CloudVisual.html">Latitude vs. Cloudiness</a>
+            <a class="dropdown-item" href="WindVisual.html">Latitude vs. Wind Speed</a>
           </div>
         </li>
       </ul> 
@@ -38,39 +38,31 @@
 </head>
 
 <body>
-  <div class = "row">
-    <div class = "col-12 col-md-6">
-      <div class = "container">
-        <h1>Summary: Latitude vs. X</h1>
-        <img id = "main-graph" src=https://github.com/DailyAdamG/python-api-challenge/blob/master/WeatherPy/output_data/Lat%20vs.%20Temp.png?raw=true>
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-          To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at
-          included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created
-          as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-        </p>
-      </div>
-    </div>
-
+    
     <div class = "col-12 col-md-6">
       <div class = "container">
         <h1>Visualizations</h1>
           <div class = row>
             <div class = "col-md-6 col-3">
+              <a class="dropdown-item" href="SecondaryPage.html">Latitude vs. Max Temperature</a>
         <a href="SecondaryPage.html"> <img class="visualizations" src=https://github.com/thom0497/Web-Design-Challenge-JAT/blob/master/Instructions/WebVisualizations/assets/images/Fig1.png?raw=true></a>
             </div>
             <div class = "col-md-6 col-3">
+              <a class="dropdown-item" href="ThirdPage.html">Latitude vs. Humidity</a>
         <a href="ThirdPage.html"><img class="visualizations" src=https://github.com/thom0497/Web-Design-Challenge-JAT/blob/master/Instructions/WebVisualizations/assets/images/Fig2.png?raw=true></a>
             </div>
             <div class = "col-md-6 col-3">
+              <a class="dropdown-item" href="FourthPage.html">Latitude vs. Cloudiness</a>
         <a href="FourthPage"><img class="visualizations" src=https://github.com/thom0497/Web-Design-Challenge-JAT/blob/master/Instructions/WebVisualizations/assets/images/Fig3.png?raw=true></a>
             </div>
             <div class = "col-md-6 col-3">
+              <a class="dropdown-item" href="FifthPage.html">Latitude vs. Wind Speed</a>
         <a href="FifthPage.html"><img class="visualizations" src=https://github.com/thom0497/Web-Design-Challenge-JAT/blob/master/Instructions/WebVisualizations/assets/images/Fig4.png?raw=true></a>
             </div>
         </div>
       </div>
     </div>
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
